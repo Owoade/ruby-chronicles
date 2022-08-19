@@ -1,3 +1,7 @@
+=begin
+  A set of algos implementing loops
+=end
+
 def generate_multiplication_table( number, limit = 12  )
   index = 0
   while index <= limit
