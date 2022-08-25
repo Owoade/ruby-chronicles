@@ -10,12 +10,12 @@ class Node
 end
 
 class BST
-
   attr_accessor :root;
 
   def initialize
     @root = nil;
   end
+
   def util_search_tree(node, data)
     if node.data > data
 
@@ -38,7 +38,9 @@ class BST
     else
       return nil
     end
+
   end
+
   def add( data )
     if @root === nil
       @root = Node.new( data );
@@ -46,6 +48,7 @@ class BST
     end
     return util_search_tree( @root, data);
   end
+
   def findMin
     current = @root;
 
@@ -55,6 +58,7 @@ class BST
 
     return current.data
   end
+
   def findMax
     current = @root;
 
@@ -74,6 +78,7 @@ class BST
     end
     return nil
   end
+
 end
 
 my_tree = BST.new;
